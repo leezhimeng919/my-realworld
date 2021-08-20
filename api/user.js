@@ -30,7 +30,7 @@ export const currentUser = () => {
     })
 }
 
-// 获取最近的用户
+// 更新用户
 export const updateUser = data => {
     return request({
         method: 'PUT',

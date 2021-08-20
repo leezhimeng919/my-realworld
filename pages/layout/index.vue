@@ -21,9 +21,15 @@
               </nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link" :to="'/profile/' + user.id"> 
-                <img class="user-pic" :src="user.image" width="20px">
-                {{ user.username }} 
+              <nuxt-link
+                class="nav-link"
+                :to="{
+                  name: 'profile',
+                  params: { username: user.username },
+                }"
+              >
+                <img class="user-pic" :src="user.image" width="20px" />
+                {{ user.username }}
               </nuxt-link>
             </li>
           </template>
@@ -35,7 +41,6 @@
               <nuxt-link class="nav-link" to="/login"> Sign in </nuxt-link>
             </li>
           </template>
-          
         </ul>
       </div>
     </nav>
@@ -56,7 +61,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from "vuex";
 
 export default {
   name: "LayoutIndex",
