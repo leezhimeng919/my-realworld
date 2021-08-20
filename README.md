@@ -13,3 +13,4 @@ unzip ./realworld-nuxtjs.zip -d ./realworld-nuxt
 # TODO
 1. 设置
 2. 新建文章
+3. 个人信息更新
