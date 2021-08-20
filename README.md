@@ -9,3 +9,7 @@ scp ./realworld-nuxtjs.zip root@106.75.31.112:/root
 
 ## 解压缩
 unzip ./realworld-nuxtjs.zip -d ./realworld-nuxt
+
+# TODO
+1. 设置
+2. 新建文章
